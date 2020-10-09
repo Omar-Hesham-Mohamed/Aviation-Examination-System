@@ -1,0 +1,47 @@
+{
+	"name": "express-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"jest": {
+		"testEnvironment": "node"
+	},
+	"scripts": {
+		"client-install": "npm install --prefix client",
+		"start": "node server.js",
+		"server": "nodemon server.js",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.0.0",
+		"bcryptjs": "^2.4.3",
+		"concurrently": "^5.3.0",
+		"cors": "^2.8.5",
+		"crypto": "^1.0.1",
+		"csv-writer": "^1.6.0",
+		"exceljs": "^4.1.1",
+		"express": "^4.16.4",
+		"express-favicon": "^2.0.1",
+		"express-jwt": "^5.3.3",
+		"express-list-endpoints": "^4.0.1",
+		"fast-csv": "^4.3.1",
+		"heroku": "^7.42.6",
+		"joi": "^14.3.1",
+		"joi-date-extensions": "^1.2.0",
+		"js-file-download": "^0.4.12",
+		"json-stringify-safe": "^5.0.1",
+		"json2csv": "^5.0.1",
+		"jsonwebtoken": "^8.5.0",
+		"moment": "^2.27.0",
+		"mongoose": "^5.10.0"
+	},
+	"devDependencies": {
+		"jest": "^24.7.1",
+		"nodemon": "^1.18.10"
+	}
+}
